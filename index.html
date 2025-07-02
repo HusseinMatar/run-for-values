@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+  <title>Run for Values</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="title">Run for Values</h1>
+
+  <!-- Keyword display in 2-1-2 layout -->
+  <div class="keywords-2-1-2">
+    <div class="row two">
+      <div id="kw-Uniqverse" class="keyword">Uniqverse</div>
+      <div id="kw-Belongship" class="keyword">Belongship</div>
+    </div>
+    <div class="row one">
+      <div id="kw-Inspirelead" class="keyword">Inspirelead</div>
+    </div>
+    <div class="row two">
+      <div id="kw-Mindshift" class="keyword">Mindshift</div>
+      <div id="kw-Ownability" class="keyword">Ownability</div>
+    </div>
+  </div>
+
+  <!-- Game container -->
+  <div class="game-wrapper">
+    <div id="game-container">
+      <div id="player" aria-label="Dinosaur player">🦖</div>
+    </div>
+  </div>
+
+  <!-- Mobile controls (only shown on small screens via media query) -->
+<div class="mobile-controls">
+  <button id="left-btn" aria-label="Move Left">&larr;</button>
+  <button id="right-btn" aria-label="Move Right">&rarr;</button>
+</div>
+
+
+  <!-- End game overlay -->
+  <div id="overlay">
+    <p id="message"></p>
+    <button id="restart-btn" style="display: none;">Restart Game</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
