@@ -265,13 +265,13 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 5px;
+    margin-top: 3px;
   }
 
   .mobile-controls button {
   padding: 14px 24px;              /* Bigger padding for better tap area */
   font-size: 20px;                 /* Larger text */
-  min-width: 120px;                /* Ensures wider buttons */
+  min-width: 180px;                /* Ensures wider buttons */
     border: none;
     border-radius: 12px;
     background-color: #4caf50;
