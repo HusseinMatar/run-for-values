@@ -271,7 +271,7 @@ body {
   .mobile-controls button {
   padding: 14px 24px;              /* Bigger padding for better tap area */
   font-size: 20px;                 /* Larger text */
-  min-width: 180px;                /* Ensures wider buttons */
+  width: 150px;                /* Ensures wider buttons */
     border: none;
     border-radius: 12px;
     background-color: #4caf50;
