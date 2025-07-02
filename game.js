@@ -100,6 +100,12 @@ const isCollision =
         if (kw) kw.classList.add("collected");
 
         if (collectedWords.length === allWords.length) {
+          confetti({
+  particleCount: 150,
+  spread: 100,
+  origin: { y: 0.6 },
+});
+
           endGame("🎉 Hai vinto! Tutti i valori raccolti!");
         }
       }
