@@ -73,14 +73,18 @@ function spawnItem(colIndex, isObstacle) {
     top += fallSpeed;
     item.style.top = `${top}px`;
 
-    const itemRect = item.getBoundingClientRect();
-    const playerRect = player.getBoundingClientRect();
-    const margin = 30;
+const itemRect = item.getBoundingClientRect();
+const playerRect = player.getBoundingClientRect();
 
-    const isCollision =
-      itemRect.bottom - margin >= playerRect.top &&
-      itemRect.left + margin < playerRect.right &&
-      itemRect.right - margin > playerRect.left;
+const verticalMargin = 15;     // For top/bottom leniency
+const horizontalMargin = 25;  // For left/right leniency
+
+const isCollision =
+  itemRect.bottom - verticalMargin >= playerRect.top &&
+  itemRect.top + verticalMargin <= playerRect.bottom &&
+  itemRect.left + horizontalMargin < playerRect.right &&
+  itemRect.right - horizontalMargin > playerRect.left;
+
 
     if (isCollision) {
       clearInterval(interval);
