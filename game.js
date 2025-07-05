@@ -17,7 +17,7 @@ let fallSpeed = 12;
 let spawnCount = 0;
 let spawnInterval;
 let gameOver = false;
-const wordSpawnThreshold = 3;
+const wordSpawnThreshold = 4;
 
 function getStep() {
   return gameContainer.offsetWidth / totalColumns;
