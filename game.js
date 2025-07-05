@@ -13,7 +13,7 @@ let previousObstacleCols = [];
 
 const totalColumns = 3;
 let currentColumnIndex = 1;
-let fallSpeed = 10;
+let fallSpeed = 12;
 let spawnCount = 0;
 let spawnInterval;
 let gameOver = false;
@@ -194,5 +194,5 @@ restartBtn.addEventListener("click", resetGame);
 window.addEventListener("load", () => {
   const step = getStep();
   player.style.left = `${currentColumnIndex * step}px`;
-  spawnInterval = setInterval(spawnRow, 1800);
+  spawnInterval = setInterval(spawnRow, 1000);
 });
